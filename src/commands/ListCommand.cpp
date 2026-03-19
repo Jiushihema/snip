@@ -1,3 +1,8 @@
+#ifdef _WIN32
+    #include <curses.h>
+#else
+    #include <ncurses.h>
+#endif
 #include "commands/ListCommand.hpp"
 #include "display/Renderer.hpp"
 

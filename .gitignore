@@ -67,3 +67,5 @@ Desktop.ini
 
 # ── 编译数据库（本地工具链产物） ─────────────────────────────────────────────
 compile_commands.json
+third_party/pdcurses/ 
+third_party/pdcurses_dist/ 

@@ -35,6 +35,7 @@
 #include "commands/SearchCommand.hpp"
 #include "commands/CopyCommand.hpp"
 #include "commands/DeleteCommand.hpp"
+#include "commands/FindCommand.hpp"   // [新增]
 
 namespace {
 
@@ -183,6 +184,8 @@ int main(int argc, char* argv[]) {
         snip::SearchCommand::registerTo(app, service);
         snip::CopyCommand::registerTo(app, service);
         snip::DeleteCommand::registerTo(app, service);
+        snip::FindCommand::registerTo(app, service, clipboard);  // [新增]
+
 
         // ── 6. 解析命令行参数 ────────────────────────
         CLI11_PARSE(app, argc, argv);
