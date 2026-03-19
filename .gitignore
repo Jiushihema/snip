@@ -1,0 +1,69 @@
+# ── 构建产物 ──────────────────────────────────────────────────────────────────
+build/
+cmake-build-*/
+out/
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# ── 用户数据与本地配置（不入库） ─────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+config.toml
+
+# ── CMake 生成文件 ────────────────────────────────────────────────────────────
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+_deps/
+
+# ── IDE / 编辑器 ──────────────────────────────────────────────────────────────
+# CLion / JetBrains
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+\#*\#
+.\#*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── 编译数据库（本地工具链产物） ─────────────────────────────────────────────
+compile_commands.json
